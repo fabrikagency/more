@@ -89,6 +89,10 @@ More inserts headers in the generated CSS files, letting people know that the fi
 
 	Less::More.header = false
 
+More will automatically clean and parse the generated CSS files every time your rails app is initialized. To disable this setting, set:
+
+	Less::More.clean_and_parse_after_initialize = false
+
 To configure More for a specific environment, add configuration options into the environment file, such as `config/environments/development.rb`.
 
 If you wish to apply the configuration to all environments, place them in `config/environment.rb`.
