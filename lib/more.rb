@@ -70,7 +70,7 @@ class Less::More
     end
     
     # If clean and parse should run after initialization
-    def clean_and_parse_after_initialize
+    def clean_and_parse_after_initialize?
       get_cvar(:clean_and_parse_after_initialize)
     end
     
