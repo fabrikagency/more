@@ -17,14 +17,16 @@ end
 class Less::More
   DEFAULTS = {
     "production" => {
-      :compression        => true,
-      :header             => false,
-      :destination_path   => "stylesheets"
+      :compression                      => true,
+      :header                           => false,
+      :destination_path                 => "stylesheets",
+      :clean_and_parse_after_initialize => true
     },
     "development" => {
-      :compression        => false,
-      :header             => true,
-      :destination_path   => "stylesheets"
+      :compression                      => false,
+      :header                           => true,
+      :destination_path                 => "stylesheets",
+      :clean_and_parse_after_initialize => true
     }
   }
   
